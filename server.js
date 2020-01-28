@@ -26,7 +26,7 @@ app.use(cors());
 
 
 app.get('/', (req, res)=> {
-    res.send(db.users);
+    res.send('Working');
     })
 
 app.post('/signin', signin.handleSignIn(db,bcrypt))
